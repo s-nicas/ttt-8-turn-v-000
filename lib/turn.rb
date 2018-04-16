@@ -47,8 +47,9 @@ def turn(board)
    users_input=gets.strip
    index = input_to_index(users_input)
    if valid_move?(board, index)
-    move(board, index, player_character ="X")
+     move(board, index, player_character ="X")
     return board
+   else turn(board)
   end 
    
 end  
