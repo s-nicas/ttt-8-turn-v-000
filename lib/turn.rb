@@ -48,8 +48,8 @@ def turn(board)
    index = input_to_index(users_input)
    if valid_move?(board, index)
      move(board, index, player_character ="X")
-    return board
+    
    else turn(board)
   end 
-   
+  return board  
 end  
