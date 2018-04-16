@@ -47,12 +47,7 @@ def turn(board)
    users_input=gets.strip
    index = input_to_index(users_input)
    valid_move? (board, index)
-     if true 
-       puts "hello "
+    
    
-      return board 
-
-    else turn(board)
-
-  end 
+   
 end  
