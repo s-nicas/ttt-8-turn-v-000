@@ -54,7 +54,7 @@ end
     
 # end  
 
-def  turn board()
+def  turn (board)
   puts "Please enter 1-9:"
   users_input=get.strip
   index =input_to_index(users_input)
