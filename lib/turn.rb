@@ -50,5 +50,5 @@ def turn(board)
     move(board, index, player_character ="X")
     
   end 
-  return board 
+  puts board 
 end  
