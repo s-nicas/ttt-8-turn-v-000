@@ -42,26 +42,16 @@ def move(board, index, player_character="X")
   
 end  
 
-# def turn(board)
-#   puts "Please enter 1-9:"
-#   users_input=gets.strip
-#   index = input_to_index(users_input)
-#   if valid_move?(board, index)
-#     move(board, index, player_character ="X")
-#     display_board(board)
-#   else turn(board)
-#   end 
-    
-# end  
-
-def  turn (board)
+def turn(board)
   puts "Please enter 1-9:"
-   users_input=get.strip
-   index =input_to_index(users_input)
+  users_input=gets.strip
+  index = input_to_index(users_input)
+  if valid_move?(board, index)
+    move(board, index, player_character ="X")
+    display_board(board)
+  else turn(board)
+  end 
+    
+end  
+
   
-  until valid_move?(board, index) == true
-   
-   move(board, index, player_character ="X")
-   display_board(board)
-  end
-end   
